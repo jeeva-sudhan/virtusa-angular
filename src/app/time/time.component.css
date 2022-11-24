@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.time,.place
+{
+    position: absolute;
+    font-family: digital dismay;/*dismay font file downloded*/
+    font-size: 5em;
+    /*font-size: xx-large;*/
+    color: navajowhite;
+    /* text-shadow: 4px 4px 0px rgba(0,0,0,0.5); */
+    z-index: 1;
+}
+.place
+{
+    color: grey;
+    z-index: 1;
+    opacity: 10%;
+}

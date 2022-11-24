@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="currencyconverter.component.css" type="text\css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CURRENCY CONVERTER</title>
+    </head>
+    <body>
+        <div class="division-one">
+            <div class="heading">
+                <h1><strong>CURRENCY <br> CONVERTER</strong></h1>
+            </div>
+            <div class="button-one">
+                <h3>Country From</h3>
+                <select class="from" [(ngModel)]="fromconversion">
+                    <option value="none" selected>None</option>
+                    <option value="IN">INDIA</option>
+                    <option value="US">US</option>
+                </select>
+            </div>
+            <div class="button-two">
+                <h3>Country To</h3>
+                <select class="to" [(ngModel)]="toconversion">
+                    <option value="none" selected>None</option>
+                    <option value="IN">INDIA</option>
+                    <option value="US">US</option>
+                </select>
+            </div>
+            <div class="out-section">
+                <h3 class="head-one">From Value</h3>
+                <input type="text" placeholder="input value" class="input" [(ngModel)]="inp">
+                <button (click)="converter()" class="convert">Convert</button>
+                <h3 class="head-two">To Value</h3>
+                <input type="number" placeholder="output" class="output" [(ngModel)]="out">
+                <button (click)="clear()" class="delete">Clear</button>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <p>currencyconverter works!</p> -->

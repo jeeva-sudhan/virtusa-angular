@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.out-section {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.button-one,.out-section {
+    margin-top: 20px;
+}
+
+.button-two {
+    margin-top: 5px;
+}
+
+.button-one,.button-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.from {
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.to {
+    margin-left: 45px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.from:hover {
+    cursor: pointer;
+}
+
+.to:hover {
+    cursor: pointer;
+}
+
+body {
+    /*min-height: 100vh;*/
+    /*margin-top: 200px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*same*/
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+}
+
+.division-one {
+    height:300px;
+    width: 300px;
+    border:2px solid black;
+    background-color: rgba(128, 128, 128, 0.33);
+}
+
+.heading {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.convert {
+    position: absolute;
+    top: 27px;
+    right: 65px;
+    width: 20%;
+    color:black;
+    border-radius: 50px;
+}
+
+.delete {
+    position: absolute;
+    color: black;
+    top:74px;
+    right: 65px;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.convert:hover,.delete:hover {
+    color: white;
+    background-color: rgba(0, 128, 0, 0.575);
+    border: 2px solid rgba(0, 128, 0, 0.575);
+    cursor: pointer;
+}
+
+.head-one,.head-two {
+    margin-top: 5px;
+}
+
+.input,.output {
+    border-radius: 50px;
+}
+
+.output {
+    margin-bottom: 5px;
+}
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="app.component.css" type="text/css">
+    <meta name="viewport" content = "width=device-width,initial-scale=1">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a routerLink="/calculator" class="button">Calculator</a>
+      <a routerLink="/currency" class="button">CurrencyConverter</a>
+      <a routerLink="/transform" class="button">Transform</a>
+      <a routerLink="/time" class="button">Time</a>
+      <a routerLink="/image" class="button">Image</a>
+    </div>
+    <router-outlet></router-outlet>
+
+      <!--<button (click) = "getvalue(+tx1.value,+tx2.value)">Click</button> -->
+  </body>
+</html>

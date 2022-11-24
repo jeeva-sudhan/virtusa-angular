@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="transform.component.css" type="text/css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Text Transform</title>
+    </head>
+    <body>
+        <div class="container">
+            <input type="text" placeholder="Enter the text" class="inp" [(ngModel)]="input">
+            <span>{{input | uppercase}}</span><br> 
+            <span>{{input | lowercase}}</span>
+        </div>
+    </body>
+
+</html>

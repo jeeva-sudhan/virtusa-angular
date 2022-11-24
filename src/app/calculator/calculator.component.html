@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calculator.component.css" type="text/css">
+    <meta name="viewport" content = "width=device-width,initial-scale=1">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class = division-one>
+      <div class="heading">
+        <h1 class="title">CALCULATOR</h1>
+      </div>
+      <div class="division-two">
+        <input type="text" placeholder="0" readonly id="inp" #tx1 [(ngModel)]="input">
+        <input type="number" placeholder="0" readonly id="out" #tx2 [(ngModel)]="output">
+        <button (click)="backspace()" class="backspace"> del </button>
+      </div> 
+      <!--<input type="text" placeholder="0" readonly id="inp" #tx1 [(ngModel)]="input">
+        <input type="number" placeholder="0" readonly id="out" #tx2 [(ngModel)]="output">
+        <button (click)="backspace()" class="backspace"> del </button>-->
+      <div class="btn">
+        <div class="button-one">
+          <button (click)="clear()" class="clear">CE</button>
+          <button (click)="display('%')" class="button">%</button>
+          <button (click)="display('*')" class="button">*</button>
+          <button (click)="display('-')" class="button">-</button>
+        </div>
+        
+        <div class="button-two">
+          <div class="button-three">
+            <button (click)="display('7')" class="button">7</button>
+            <button (click)="display('8')" class="button">8</button>
+            <button (click)="display('9')" class="button">9</button>
+            <button (click)="display('4')" class="button">4</button>
+            <button (click)="display('5')" class="button">5</button>
+            <button (click)="display('6')" class="button">6</button>
+          </div>
+          
+          <div>
+            <button (click)="display('+')" class="button-four">+</button>
+          </div>
+        </div>
+
+        <div class="button-five">
+          <div class="button-six">
+            <div class="button-seven">
+              <button (click)="display('1')" class="button">1</button>
+              <button (click)="display('2')" class="button">2</button>
+              <button (click)="display('3')" class="button">3</button>
+            </div>
+            <div class="button-eight">
+              <button (click)="display('0')" class="button">0</button>
+              <button (click)="display('.')" class="button">.</button>
+            </div>
+          </div>
+          <div>
+            <button (click)="evaluate()" class="equal">=</button>
+          </div>
+        </div>
+      </div>
+
+      <!--<button (click) = "getvalue(+tx1.value,+tx2.value)">Click</button> -->
+
+
+    </div>
+  </body>
+</html>
+

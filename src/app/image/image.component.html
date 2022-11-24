@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="image.component.css" type="text\css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Image</title>
+    </head>
+    <body>
+        <div class="container">
+            <h4 class="heading">select image name</h4>
+            <select class="selectinput" [(ngModel)]="selectimg" (click)="displayimg()">
+                <option value="none" selected class="inp">None</option>
+                <option value="tiger" class="inp">Tiger</option>
+                <option value="lion" class="inp">Lion</option> 
+                <option value="hero" class="inp">Hero</option>
+            </select>
+            <button class="clear" (click)="clear()">Clear</button>
+            <h4 class="headingtwo">Image</h4>
+            <div class="division-two">
+                <img src="{{img}}" class="output-image" *ngIf="img != null">
+            </div>
+        </div>
+    </body>
+</html>
